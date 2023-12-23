@@ -255,8 +255,17 @@ function isPrime(n) {
  *   toNumber(42, 0) => 42
  *   toNumber(new Number(42), 0) => 42
  */
-function toNumber(/* value, def */) {
-  throw new Error('Not implemented');
+function toNumber(value, def) {
+  // throw new Error('Not implemented');    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11
+  let xx;
+  if (typeof parseInt(value.match(/\d+/), 10) === 'number') {
+    xx = parseInt(value.match(/\d+/), 10);
+  } else if (value === null) {
+    xx = 0;
+  } else {
+    xx = def;
+  }
+  return xx;
 }
 
 /**
@@ -270,8 +279,9 @@ function toNumber(/* value, def */) {
  *   -2 => -8
  *   0  => 0
  */
-function getCube(/* num */) {
-  throw new Error('Not implemented');
+function getCube(num) {
+  // throw new Error('Not implemented');
+  return num ** 3;
 }
 
 /**
@@ -287,8 +297,17 @@ function getCube(/* num */) {
  *   3  => 2
  *   10 => 55
  */
-function getFibonacciNumber(/* index */) {
-  throw new Error('Not implemented');
+let xx;
+function getFibonacciNumber(index) {
+  // throw new Error('Not implemented');
+  if (index === 0) {
+    xx = 0;
+  } else if (index === 1) {
+    xx = 1;
+  } else {
+    xx = getFibonacciNumber(index - 1) + getFibonacciNumber(index - 2);
+  }
+  return xx;
 }
 
 /**
@@ -302,8 +321,13 @@ function getFibonacciNumber(/* index */) {
  *   10 => 55 // (1+2+3+...+10)
  *   1  => 1
  */
-function getSumToN(/* n */) {
-  throw new Error('Not implemented');
+function getSumToN(n) {
+  // throw new Error('Not implemented');
+  let sum = 0;
+  for (let i = 1; i <= n; i += 1) {
+    sum += i;
+  }
+  return sum;
 }
 
 /**
@@ -317,8 +341,15 @@ function getSumToN(/* n */) {
  *   202 => 4  // (2+0+2)
  *   5   => 5  // 5
  */
-function getSumOfDigits(/* num */) {
-  throw new Error('Not implemented');
+function getSumOfDigits(num) {
+  // throw new Error('Not implemented');
+  let summNum = 0;
+  const numArr = num.toString().split('');
+  // .map((symbol) => +symbol);
+  for (let i = 0; i < numArr.length; i += 1) {
+    summNum += Number(numArr[i]);
+  }
+  return summNum;
 }
 
 /**
