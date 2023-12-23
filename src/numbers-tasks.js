@@ -56,9 +56,8 @@ function getAverage(value1, value2) {
   // throw new Error('Not implemented');
   const a = value1;
   const b = value2;
-  const av = (a / 2 + b / 2);
+  const av = a / 2 + b / 2;
   return av;
-}
 }
 
 /**
