@@ -61,7 +61,7 @@ function getAverage(value1, value2) {
 }
 
 /**
- * Returns a distance between two points by cartesian coordinates..
+ * Returns a distance between two points by cartesian coordinates..npm
  *
  * @param {number} x1
  * @param {number} y1
@@ -255,17 +255,18 @@ function isPrime(n) {
  *   toNumber(42, 0) => 42
  *   toNumber(new Number(42), 0) => 42
  */
-function toNumber(value, def) {
-  // throw new Error('Not implemented');    !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!11
-  let xx;
-  if (typeof parseInt(value.match(/\d+/), 10) === 'number') {
-    xx = parseInt(value.match(/\d+/), 10);
-  } else if (value === null) {
-    xx = 0;
-  } else {
-    xx = def;
-  }
-  return xx;
+function toNumber(/* value, def */) {
+  throw new Error('Not implemented');
+  // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+  // let xx;
+  // if (typeof parseInt(value.match(/\d+/), 10) === 'number') {
+  //   xx = parseInt(value.match(/\d+/), 10);
+  // } else if (value === null) {
+  //   xx = 0;
+  // } else {
+  //   xx = def;
+  // }
+  // return xx;
 }
 
 /**
@@ -363,8 +364,8 @@ function getSumOfDigits(num) {
  *   16  => true
  *   15  => false
  */
-function isPowerOfTwo(num) {
-  // throw new Error('Not implemented');
+function isPowerOfTwo(/* num */) {
+  throw new Error('Not implemented');
   // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! не работает
 
   // let pow = num;
@@ -376,17 +377,18 @@ function isPowerOfTwo(num) {
   // } else {
   //   end = false;
   // }
-  let pow;
-  let end;
-  if (num > 2) {
-    pow = isPowerOfTwo(num / 2);
-  } else if (pow % 2 === 0) {
-    end = true;
-  } else {
-    end = false;
-  }
 
-  return end;
+  // let pow;
+  // let end;
+  // if (num > 2) {
+  //   pow = isPowerOfTwo(num / 2);
+  // } else if (pow % 2 === 0) {
+  //   end = true;
+  // } else {
+  //   end = false;
+  // }
+
+  // return end;
 }
 
 /**
@@ -564,9 +566,9 @@ function getIntegerOnString(str, base) {
  * 3.5      => false
  * 2 ** 53  => false
  */
-function isSafeInteger(number) {
-  // throw new Error('Not implemented');
-  return number.isSafeInteger;
+function isSafeInteger(/* number */) {
+  throw new Error('Not implemented');
+  // return number.isSafeInteger;
 }
 
 /**
