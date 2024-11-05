@@ -61,7 +61,7 @@ function getAverage(value1, value2) {
 }
 
 /**
- * Returns a distance between two points by cartesian coordinates.
+ * Returns a distance between two points by cartesian coordinates..
  *
  * @param {number} x1
  * @param {number} y1
