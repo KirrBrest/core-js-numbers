@@ -35,7 +35,6 @@ function getRectangleArea(width, height) {
  *   0    => 0
  */
 function getCircleCircumference(radius) {
-  // throw new Error('Not implemented');
   const circ = 2 * Math.PI * radius;
   return circ;
 }
