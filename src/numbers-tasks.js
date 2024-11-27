@@ -503,7 +503,7 @@ function getIntegerOnString(str, base) {
  * 2 ** 53  => false
  */
 function isSafeInteger(number) {
-  return number.isSafeInteger;
+  return Number.isSafeInteger(number);
 }
 
 /**
