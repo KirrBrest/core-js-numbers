@@ -614,8 +614,13 @@ function getMaxNumber(firstNumber, secondNumber) {
  * -5, 0 => -5 | -4 | -3 | -2 | -1 | 0
  * -1, 1 => -1 | 0 | 1
  */
-function getRandomInteger(/* min, max */) {
-  throw new Error('Not implemented');
+function getRandomInteger(min, max) {
+  let result = 0;
+  if (!Number.isNaN(min) && !Number.isNaN(max) && !NaN) {
+    result = min + Math.random() * (max - min);
+  }
+
+  return Math.round(result);
 }
 
 /**
